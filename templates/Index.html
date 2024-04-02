@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Imagem para PDF</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Conversor de arquivos (.png - .jpg - jpeg) para PDF</h1>
+    <form action="/convert" method="post" enctype="multipart/form-data">
+        <div class="custom-file-upload">
+            <label for="file">Adicione seu documento .PNG ou .JPG:</label>
+            <input type="file" name="file" id="file" multiple>
+            <button type="submit">Converter para PDF</button>
+        </div>  
+    </form>
+</body>
+</html>
